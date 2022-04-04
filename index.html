@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Tv</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="app" class="container">
+
+        <h1>{{appTitle}}</h1>
+
+            <div class="images">
+                <img v-if="visibility" src="./img/nature1.jpg" >
+                <img v-else src="./img/nature3.jpg">
+            </div>
+
+        <div class="btn">
+            <button @click="visibility = !visibility">{{btn}}</button>
+            <button >{{nextBtn}}</button>
+            <button>{{prevBtn}}</button>
+        </div>
+    </div>
+
+    <script src="./vue.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
